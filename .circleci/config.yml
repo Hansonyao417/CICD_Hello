@@ -26,7 +26,7 @@ jobs:
           working_directory: ~/project
           name: Run tests
           command: |
-            g++ ~/project/main.cpp
+            g++ ~/project/Hello_world/main.cpp
             
 
 workflows:
