@@ -30,7 +30,7 @@ jobs:
       - run:
           working_directory: ~/project
           name: Run tests
-          command: sh ~/project/a.out
+          command: cd ~/project & ./a.out
             
 
 workflows:
