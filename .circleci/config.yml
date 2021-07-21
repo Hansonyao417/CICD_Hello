@@ -24,9 +24,14 @@ jobs:
           command: ls -a
       - run:
           working_directory: ~/project
-          name: Run tests
+          name: Run build
           command: |
             g++ ~/project/Hello_world/main.cpp
+      - run:
+          working_directory: ~/project
+          name: Run tests
+          command: |
+            ./project/Hello_world/a.out
             
 
 workflows:
