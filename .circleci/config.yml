@@ -22,7 +22,11 @@ jobs:
           working_directory: ~/project
           name: Run tests
           command: |
-            g++ ./main.cpp & ./a.out
+            g++ ./main.cpp
+      - run:
+          working_directory: ~/project
+          name: Run tests
+          command: ls -a
             
 
 workflows:
